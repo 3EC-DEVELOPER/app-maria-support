@@ -7,17 +7,36 @@
     <style>
       :root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
       body { margin: 0; background: #f7f7fa; color: #202124; line-height: 1.6; }
-      main { max-width: 720px; margin: 48px auto; padding: 36px; background: #fff; border-radius: 16px; box-shadow: 0 4px 24px #00000012; }
+      main { max-width: 920px; margin: 48px auto; padding: 36px; background: #fff; border-radius: 16px; box-shadow: 0 4px 24px #00000012; }
       h1 { margin-top: 0; color: #c62a66; }
+      h2 { margin-top: 2.25rem; }
       a { color: #a61e54; }
+      .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 16px; margin-top: 1.25rem; }
+      .gallery a { display: block; border-radius: 14px; overflow: hidden; background: #f0edf2; box-shadow: 0 3px 12px #00000016; transition: transform .18s ease, box-shadow .18s ease; }
+      .gallery a:hover { transform: translateY(-3px); box-shadow: 0 8px 22px #00000024; }
+      .gallery img { display: block; width: 100%; height: auto; }
+      .gallery-caption { margin: .75rem 0 0; color: #5f6368; font-size: .94rem; }
       footer { margin-top: 36px; font-size: .9rem; color: #5f6368; }
-      @media (prefers-color-scheme: dark) { body { background: #19191c; color: #e8eaed; } main { background: #252529; } h1, a { color: #ff8db9; } footer { color: #bdc1c6; } }
+      @media (max-width: 600px) { main { margin: 20px auto; padding: 24px; border-radius: 0; } .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } }
+      @media (prefers-color-scheme: dark) { body { background: #19191c; color: #e8eaed; } main { background: #252529; } h1, a { color: #ff8db9; } .gallery a { background: #343438; } .gallery-caption, footer { color: #bdc1c6; } }
     </style>
   </head>
   <body>
     <main>
       <h1>App Maria Support</h1>
       <p>App Maria provides practical prenatal-care calculations and quick-reference information for healthcare professionals, expectant parents, and families.</p>
+      <h2>Explore App Maria</h2>
+      <p>A closer look at App Maria's simple, light-mode experience: practical tools, trusted reference information, and pregnancy-journey guidance.</p>
+      <div class="gallery" aria-label="App Maria iPhone screenshots">
+        <a href="images/screenshots/app-maria-02-settings.png"><img src="images/screenshots/app-maria-02-settings.png" alt="App Maria settings screen" loading="lazy"></a>
+        <a href="images/screenshots/app-maria-03-info.png"><img src="images/screenshots/app-maria-03-info.png" alt="App Maria information screen" loading="lazy"></a>
+        <a href="images/screenshots/app-maria-05-info-story.png"><img src="images/screenshots/app-maria-05-info-story.png" alt="App Maria pregnancy information screen" loading="lazy"></a>
+        <a href="images/screenshots/app-maria-06-pregnancy-timeline.png"><img src="images/screenshots/app-maria-06-pregnancy-timeline.png" alt="App Maria pregnancy timeline" loading="lazy"></a>
+        <a href="images/screenshots/app-maria-07-week-detail.png"><img src="images/screenshots/app-maria-07-week-detail.png" alt="App Maria weekly pregnancy detail" loading="lazy"></a>
+        <a href="images/screenshots/app-maria-08-week-detail.png"><img src="images/screenshots/app-maria-08-week-detail.png" alt="App Maria pregnancy journey detail" loading="lazy"></a>
+        <a href="images/screenshots/app-maria-09-final.png"><img src="images/screenshots/app-maria-09-final.png" alt="App Maria prenatal-care tool" loading="lazy"></a>
+      </div>
+      <p class="gallery-caption">Select a screenshot to view it in full size.</p>
       <h2>Need help?</h2>
       <p>For support, feature requests, or to report a problem, email <a href="mailto:d.f-s@hotmail.co.uk">d.f-s@hotmail.co.uk</a>.</p>
       <h2>Important medical information</h2>
