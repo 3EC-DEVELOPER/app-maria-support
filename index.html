@@ -19,9 +19,13 @@
       .gallery a { display: block; border-radius: 14px; overflow: hidden; background: #f0edf2; box-shadow: 0 3px 12px #00000016; transition: transform .18s ease, box-shadow .18s ease; }
       .gallery a:hover { transform: translateY(-3px); box-shadow: 0 8px 22px #00000024; }
       .gallery img { display: block; width: 100%; height: auto; }
+      .gallery--iphone a { padding: 7px; border: 2px solid #4a4a4d; border-radius: 28px; background: linear-gradient(135deg, #55565a, #171719 48%, #4a4a4d); box-shadow: 0 4px 14px #00000035; }
+      .gallery--iphone img { border-radius: 19px; }
+      .gallery--ipad a { padding: 9px; border: 2px solid #4a4a4d; border-radius: 23px; background: linear-gradient(135deg, #55565a, #171719 48%, #4a4a4d); box-shadow: 0 4px 14px #00000035; }
+      .gallery--ipad img { border-radius: 13px; }
       .gallery-caption { margin: .75rem 0 0; color: #5f6368; font-size: .94rem; }
       footer { margin-top: 36px; font-size: .9rem; color: #5f6368; }
-      @media (max-width: 600px) { main { margin: 20px auto; padding: 24px; border-radius: 0; } .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } }
+      @media (max-width: 600px) { main { margin: 20px auto; padding: 24px; border-radius: 0; } .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } .gallery--iphone a { padding: 5px; border-radius: 22px; } .gallery--iphone img { border-radius: 15px; } .gallery--ipad a { padding: 6px; border-radius: 18px; } .gallery--ipad img { border-radius: 10px; } }
       @media (prefers-color-scheme: dark) { body { background: #19191c; color: #e8eaed; } main { background: #252529; } h1, a { color: #ff8db9; } h4 { color: #bdc1c6; } .gallery a { background: #343438; } .gallery-caption, footer { color: #bdc1c6; } }
     </style>
   </head>
@@ -90,7 +94,7 @@
         <a href="images/screenshots/2026-10/ipad/ipad-nutrition-overview.png"><img src="images/screenshots/2026-10/ipad/ipad-nutrition-overview.png" alt="Nutrition and weight overview on iPad" loading="lazy"></a>
         <a href="images/screenshots/2026-10/ipad/ipad-nutrition-caloric-needs.png"><img src="images/screenshots/2026-10/ipad/ipad-nutrition-caloric-needs.png" alt="Caloric needs reference on iPad" loading="lazy"></a>
       </div>
-      <p class="gallery-caption">Select a screenshot to view it in full size.</p>
+      <p class="gallery-caption">The gallery uses presentation-only device frames. Select a screenshot to view its native App Store-ready image.</p>
       <h2>Need help?</h2>
       <p>For support, feature requests, or to report a problem, email <a href="mailto:d.f-s@hotmail.co.uk">d.f-s@hotmail.co.uk</a>.</p>
       <h2>Important medical information</h2>
