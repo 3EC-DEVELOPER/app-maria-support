@@ -22,14 +22,16 @@
       .gallery img { display: block; width: 100%; height: auto; }
       .gallery--iphone a { padding: 7px; border: 2px solid #4a4a4d; border-radius: 28px; background: linear-gradient(135deg, #55565a, #171719 48%, #4a4a4d); box-shadow: 0 4px 14px #00000035; }
       .gallery--iphone img { border-radius: 19px; }
-      .gallery--android a { position: relative; padding: 13px 5px 7px; border: 2px solid #303136; border-radius: 18px; background: linear-gradient(135deg, #696b72, #202126 46%, #555760); box-shadow: 0 4px 14px #00000035, inset 0 0 0 1px #a9adb4; }
+      .gallery--android a { position: relative; padding: 13px 5px 17px; border: 2px solid #303136; border-radius: 18px; background: linear-gradient(135deg, #696b72, #202126 46%, #555760); box-shadow: 0 4px 14px #00000035, inset 0 0 0 1px #a9adb4; }
       .gallery--android a::before { content: ""; position: absolute; z-index: 1; top: 5px; left: 50%; width: 16px; height: 16px; margin-left: -8px; border-radius: 50%; background: #111216; box-shadow: 0 0 0 1px #51545b; }
+      .gallery--android a::after { content: "PIXEL"; position: absolute; bottom: 3px; left: 0; right: 0; color: #b7f7d2; font: 700 7px/1 -apple-system, BlinkMacSystemFont, sans-serif; letter-spacing: .16em; text-align: center; }
       .gallery--android img { border-radius: 10px; }
       .gallery--ipad a { padding: 9px; border: 2px solid #4a4a4d; border-radius: 23px; background: linear-gradient(135deg, #55565a, #171719 48%, #4a4a4d); box-shadow: 0 4px 14px #00000035; }
       .gallery--ipad img { border-radius: 13px; }
       .gallery-caption { margin: .75rem 0 0; color: #5f6368; font-size: .94rem; }
+      .device-note { margin: .15rem 0 .75rem; color: #3ddc84; font-size: .82rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
       footer { margin-top: 36px; font-size: .9rem; color: #5f6368; }
-      @media (max-width: 600px) { main { margin: 20px auto; padding: 24px; border-radius: 0; } .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } .gallery--iphone a { padding: 5px; border-radius: 22px; } .gallery--iphone img { border-radius: 15px; } .gallery--android a { padding: 11px 4px 5px; border-radius: 15px; } .gallery--android a::before { top: 4px; width: 13px; height: 13px; margin-left: -6.5px; } .gallery--android img { border-radius: 8px; } .gallery--ipad a { padding: 6px; border-radius: 18px; } .gallery--ipad img { border-radius: 10px; } }
+      @media (max-width: 600px) { main { margin: 20px auto; padding: 24px; border-radius: 0; } .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } .gallery--iphone a { padding: 5px; border-radius: 22px; } .gallery--iphone img { border-radius: 15px; } .gallery--android a { padding: 11px 4px 14px; border-radius: 15px; } .gallery--android a::before { top: 4px; width: 13px; height: 13px; margin-left: -6.5px; } .gallery--android img { border-radius: 8px; } .gallery--ipad a { padding: 6px; border-radius: 18px; } .gallery--ipad img { border-radius: 10px; } }
       @media (prefers-color-scheme: dark) { body { background: #19191c; color: #e8eaed; } main { background: #252529; } h1, a { color: #ff8db9; } h4 { color: #bdc1c6; } .gallery a { background: #343438; } .gallery-caption, footer { color: #bdc1c6; } }
     </style>
   </head>
@@ -41,6 +43,7 @@
       <p>A current, light-mode view of App Maria's practical tools, trusted reference information, and pregnancy-journey guidance. These screenshots were captured in October 2026.</p>
       <p class="gallery-caption">App Maria processes calculation inputs, preferences, and optional calendar information on the device. It does not collect or share this information with us or third parties. See the <a href="privacy.html#google-play-data-safety">Privacy Policy and Google Play data-safety summary</a>.</p>
       <h3>Android</h3>
+      <p class="device-note">Google Pixel 9 Pro · Android</p>
       <h4>Launch</h4>
       <div class="gallery gallery--android" aria-label="App Maria Android launch screenshot">
         <a href="images/screenshots/2026-10/android/android-launch.png"><img src="images/screenshots/2026-10/android/android-launch.png" alt="App Maria launching on Android" loading="lazy"></a>
