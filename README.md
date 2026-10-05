@@ -6,6 +6,8 @@
 
 ## Android
 
+<p><img src="images/renders/2026-10/android/device-label.png" alt="Google Pixel 9 Pro · Android" height="19"></p>
+
 ### Launch
 
 <a href="images/renders/2026-10/android/android-launch-gallery-device.png"><img src="images/renders/2026-10/android/android-launch-gallery-device.png" alt="App Maria launch screen on Android" width="180"></a>
@@ -42,6 +44,8 @@
 </p>
 
 ## iPhone
+
+<p><img src="images/renders/2026-10/iphone/device-label.png" alt="iPhone 15 Pro · iOS" height="19"></p>
 
 ### Launch
 
@@ -80,6 +84,8 @@
 </p>
 
 ## iPad
+
+<p><img src="images/renders/2026-10/ipad/device-label.png" alt="iPad Pro 13-inch (M5) · iPadOS" height="19"></p>
 
 ### Launch
 
